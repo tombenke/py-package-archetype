@@ -1,5 +1,5 @@
 version: "3.2"
-services:
+services: {}
 
   # TODO: Add services here that are needed for testing
   #nats:

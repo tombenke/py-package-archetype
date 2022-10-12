@@ -1,4 +1,8 @@
 """The sample_mod class"""
 
+
 def sample_fun(name):
-    return f'Hello {name}!'
+    """
+    A sample function
+    """
+    return f"Hello {name}!"

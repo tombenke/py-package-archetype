@@ -64,10 +64,10 @@ s/tombenke/hansolo/g
 s/py-package-archetype-network/my-py-package-network/g
 ```
 
-3. Execute the substitution:
+3. Execute the substitution with the basedir of the project:
 
 ```bash
-    ./.kickoff.sh
+    ./.kickoff.sh .
 ```
 
 4. Replace the existing local git repo, that belong to the archetype with a new one.
@@ -116,6 +116,35 @@ Init with an empty repo:
 ```bash
     task build
     dist/cli --help
+```
+
+List the tasks are available during the work:
+```bash
+task list
+
+task: Available tasks for this project:
+* build: 		Build
+* clean: 		Clean temporary files and folders
+* coverage: 		Test coverage
+* dc-down: 		Clean up docker containers
+* dc-logs: 		Get all docker container logs
+* dc-logsf: 		Get all docker container logs and follow
+* dc-stop: 		Stop docker containers
+* dc-up: 		Start docker containers
+* dc-upd: 		Start docker containers in the background
+* default: 		Executes all the tests then build the binary.
+* docs: 		Generate module documentation into the docs/ folder
+* format: 		Autoformat the source files
+* install: 		Install the package and its dependencies
+* install-dev: 		Install the package and its dependencies for development
+* install-dev-editable: Install the package and its dependencies for development with editablility
+* install-git-hooks: 	Install git hooks
+* lint: 		Run python linter
+* pre-commit: 		Runs the QA tasks from a git pre-commit hook
+* publish-package: 	Publish the package to PyPI
+* test: 		Run all the tests.
+* test-verbose: 	Run all the go tests.
+* venv-create: 		Create a new Python Virtual Environment under the local folder
 ```
 
 ## License

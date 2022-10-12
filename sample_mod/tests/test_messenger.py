@@ -9,4 +9,6 @@ class SampleModTestCase(unittest.TestCase):
 
     def test_sample_fun(self) -> None:
         """Test the sample_fun function"""
-        self.assertEqual("Hello py-package-archetype!", sample_fun("py-package-archetype"))
+        self.assertEqual(
+            "Hello py-package-archetype!", sample_fun("py-package-archetype")
+        )
