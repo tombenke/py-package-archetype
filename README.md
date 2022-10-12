@@ -78,10 +78,13 @@ Remove the `.git` subfolder:
     rm .git -fr
 ```
 
-Init with an empty repo:
+Init with an empty repo, and add some content to it:
 ```bash
     git init
+    git add README.md
+    git commit -m "Add README.md"
 ```
+
 5. Create a Python virtual environment in the local folder:
 
 ```bash
