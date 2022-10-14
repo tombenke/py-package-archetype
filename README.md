@@ -122,6 +122,11 @@ Init with an empty repo, and add some content to it:
     dist/cli --help
 ```
 
+11. Create a new github repository, then commit and push the new project to it,
+then add a new repository secret under the __Settings/Secrets/Actions__ section
+with the name of `PYPI_API_TOKEN` with a valid token of yours,
+that you can use for publishing to the [PyPI registry](https://pypi.org/).
+
 List the tasks are available during the work:
 ```bash
 task list
